@@ -1,0 +1,9 @@
+basic job - to automate the orchastration of the VMs on aws 
+
+- options 
+    1. aws - cli
+    2. aws - api - (javascript - aws-sdk)
+    3. aws - cloudformation (cft)
+    4. aws - clouddevelopmentkit (cdk)
+
+    ec2 - elastic cloud compute - a full blown virtual machine to be used for deploying the apps
