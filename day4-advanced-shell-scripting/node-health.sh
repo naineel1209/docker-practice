@@ -39,3 +39,15 @@ ps -aef | grep -i "nixd" | awk -F " " '{print $2 ", " $5}'
 
 # extremely useful case - finding erros in the log file - errors.log in case - use
 cat machine-app.log | grep -i "ERROR"
+
+
+
+#curl - methods
+curl https://jsonplaceholder.typicode.com/posts \
+> -X POST \
+> -H 'Content-Type: application/json' \
+> -D "{\"title\":\"foo\",\"body\":\"bar\",\"userId\":1}" \
+> -o post.json
+
+
+#find - find a specific file in any of the given folders
