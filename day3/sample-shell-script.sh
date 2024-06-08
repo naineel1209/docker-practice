@@ -18,4 +18,6 @@ mkdir -p index
 
 #top - htop
 #nproc - cpu
+#ps - system processes
 #free - free
+
