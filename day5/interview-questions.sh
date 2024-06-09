@@ -49,3 +49,9 @@ touch index.js
 #soft link - soft link means - the files are poiting to each other - so when one of the file is deleted then the otehr file is also deleted
 
 #hard link - a copy of a file is created - even if the file is deleted - hard link saves the file and do not delete.
+
+
+# Networking - traceroute -  traces the route to the endpoints
+
+
+#sort the list of the file names
