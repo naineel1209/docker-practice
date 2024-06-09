@@ -51,3 +51,9 @@ curl https://jsonplaceholder.typicode.com/posts \
 
 
 #find - find a specific file in any of the given folders
+
+
+for i in {1..100};
+do 
+	echo " the number is " $i;
+done
