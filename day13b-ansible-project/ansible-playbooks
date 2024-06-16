@@ -1,0 +1,22 @@
+1. ansible-playbooks - inventory files -
+- `ansible-playbook -i hosts playbook.yml`
+- `ansible-playbook -i hosts playbook.yml --tags "tag1,tag2"`
+
+- OR we can write ansible-adhoc commands
+
+ansible -i inventory_file_path [the_target_servers] -m [module_name] -a [module_arguments]
+
+
+-- grouping in the inventory file
+
+[group_name_servers]- [webservers]
+1234567890.1234567890.1234567890.1234567890
+
+[group_name_servers]- [dbservers]
+1234567890.1234567890.1234567890.1234567890
+
+-- ansible-playbook -i hosts playbook.yml --tags "tag1,tag2"
+above command will run only the tasks which are tagged with tag1 and tag2
+and on the servers which are mentioned in the inventory file
+
+2. ansible-role

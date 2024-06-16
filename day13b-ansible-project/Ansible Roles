@@ -1,0 +1,20 @@
+Ansible roles - available in ansible roles 
+it helps to organize the playbooks and break them into smaller parts.
+
+- lot of variables
+- lot of parameters
+- lot of secrets
+- management of all this in a single playbook becomes a headache to manage
+
+-> Use Ansible Galaxy - ansible-galaxy role init kubernetes
+  
+  role - gives us many folders to structure our playbook well
+
+  - meta - meta defines the metadata about the purpose of the role and the playbook
+  - defaults - to store the default variables for the store
+  - vars - to declare the variables
+  - group-vars
+  - tasks 
+  - handlers - handling some kind of exceptions
+  - files - to pass the files to the tasks - to other machine
+  - templates - jinja2 templating

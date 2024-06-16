@@ -1,0 +1,12 @@
+aws - cli - used to automated the stuff to create ec2 instances or other services
+
+-> all of the services requires to - high management of code/scripts
+
+- now if we have to shift from AWS to MSAzure
+
+
+
+Here comes - Terraform - API as Code by HashiCorp
+
+1. Create terraform scripts - it will take care - automating the resources on the aws, gcp or azure
+2. Terraform will convert them depending on the cloud providers into API calls that the cloud providers understand

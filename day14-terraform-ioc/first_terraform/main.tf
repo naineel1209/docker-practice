@@ -1,4 +1,12 @@
 terraform{
+  backend "s3" {
+    bucket         = "naineel-terraform-remote-state-bucket"
+    key            = "global/s3/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-remote-state-locking"
+    encrypt        = true
+  }
+  
   required_providers{
     aws = {
       source = "hashicorp/aws"
