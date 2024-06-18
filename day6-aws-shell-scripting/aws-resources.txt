@@ -1,0 +1,24 @@
+Printing list of s3 buckets
+Printing list of ec2 instances
+{
+  "InstanceId": "i-0720d1c4059ac6ead",
+  "InstanceType": "t2.micro",
+  "State": "stopped",
+  "PublicIpAddress": null,
+  "PrivateIpAddress": "172.31.10.194"
+}
+{
+  "InstanceId": "i-0472d57ba02d23556",
+  "InstanceType": "t2.micro",
+  "State": "running",
+  "PublicIpAddress": "43.205.142.18",
+  "PrivateIpAddress": "172.31.34.174"
+}
+Printing list of ec2 instances
+{
+    "Functions": []
+}
+Printing list of IAM users
+{
+    "Users": []
+}
