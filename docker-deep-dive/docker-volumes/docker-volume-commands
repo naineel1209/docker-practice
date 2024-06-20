@@ -1,0 +1,17 @@
+- docker with inherently supported volume
+
+```sh
+docker run -v custom-docker-volume:/app -p 3000:3000 -d --name custom-docker-volume-app
+```
+
+- docker with volume driver
+
+```sh
+docker run -v custom-docker-volume:/app -p 3000:3000 -d --name custom-docker-volume-app --volume-driver=local
+```
+
+- docker with bind mount
+
+```sh
+docker run -it -v ./app:/app -p 3000:3000 -d --name custom-docker-volume-app
+```

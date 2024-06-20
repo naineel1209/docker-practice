@@ -1,0 +1,14 @@
+services:
+  database:
+    image: postgres:16
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "54321:5432"
+    volumes:
+      #      ./data - path to the folder on the host machine where the database data will be stored
+      #      /var/lib/postgresql/data - path to the folder in the container where the database data will be stored
+      - ./data:/var/lib/postgresql/data

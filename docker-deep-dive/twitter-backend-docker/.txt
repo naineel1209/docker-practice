@@ -1,0 +1,6 @@
+1. how to run the docker compose and dockerfile
+
+- start with docker-compose up to jump start the application
+- start the Dockerfile build an image - to start the container
+- docker build -t <image_name> .
+- docker run -p 4747:4747 <image_name> --name <custom_container_name>
