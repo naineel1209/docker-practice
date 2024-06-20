@@ -1,0 +1,91 @@
+Lifecycle of terraform
+
+1. Write Terraform configuration - Define the desired state of your infrastructure using Terraform configuration language. 
+2. Plan
+  - plan command is used to create an execution plan.
+3. Apply
+  - apply command is used to apply the changes required to reach the desired state of the configuration.
+4. Destroy
+  - destroy command is used to destroy the Terraform-managed infrastructure.
+
+### Terraform configuration
+
+Important terraform configuration - 
+
+1. setup a s3 bucket and a dynamo db table - which enables to setup the terraform remote state.
+
+initialize the terraform configuration -
+
+  ```tf
+  terraform {
+    backend "s3" {
+      bucket = "terraform-state-remote"
+      key    = "terraform.tfstate"
+      region = "us-east-1"
+      dynamodb_table = "terraform-state-lock"
+      encrypt = true
+  ```
+
+2. provider - 
+  - provider is responsible for creating and managing resources. 
+  - provider block is used to configure the named provider, in this case aws.
+  - provider block is required in every terraform configuration.
+
+3. resource - 
+  - resource block is used to define the resource that will be created and managed by terraform.
+  - resource block has two mandatory arguments - resource type and resource name.
+  - resource type is the first argument and it is the type of resource that is being created.
+  - resource name is the second argument and it is the name of the resource that is being created.
+  - resource block can have multiple arguments that are specific to the resource type.
+
+4. data - 
+  - data block is used to define data sources that are used to fetch data that is not created by terraform.
+  - data block has two mandatory arguments - data type and data name.
+  - data type is the first argument and it is the type of data source that is being fetched.
+  - data name is the second argument and it is the name of the data source that is being fetched.
+  - data block can have multiple arguments that are specific to the data source type.
+
+5. variables and inputs and outputs.tf
+
+- variables.tf - 
+  - variables.tf file is used to define input variables that are used to parameterize the terraform configuration.
+  - variables.tf file is used to define input variables that are used to parameterize the terraform configuration.
+  - variable block is used to define the input variable.
+  - variable block has two mandatory arguments - variable name and variable type.
+  - variable name is the first argument and it is the name of the input variable.
+  - variable type is the second argument and it is the type of the input variable.
+
+6. modules
+  - modules are used to group resources together and reuse them across different configurations.
+  - modules are used to group resources together and reuse them across different configurations.
+  - module block is used to define the module.
+  - module block has two mandatory arguments - module source and module name.
+  - module source is the first argument and it is the source of the module.
+  - module name is the second argument and it is the name of the module.
+
+  -example
+  ```tf
+  module "vpc" {
+    source = "./modules/vpc"
+    vpc_cidr = var.vpc_cidr
+    public_subnet_cidrs = var.public_subnet_cidrs
+    private_subnet_cidrs = var.private_subnet_cidrs
+    availability_zones = var.availability_zones
+    tags = var.tags
+  }
+  ```
+
+  reused_module - 
+  ```tf
+  module "vpc" {
+    source = "terraform-aws-modules/vpc/aws"
+    version = "2.66.0"
+    cidr = var.vpc_cidr
+    azs = var.availability_zones
+    public_subnets = var.public_subnet_cidrs
+    private_subnets = var.private_subnet_cidrs
+    enable_nat_gateway = true
+    single_nat_gateway = true
+    tags = var.tags
+  }
+  ```

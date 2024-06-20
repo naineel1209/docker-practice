@@ -1,0 +1,9 @@
+# To make 2 servers talk to each other -
+
+1. ssh-keygen on the main server
+
+2. get the public key  - (either by copying or doing anything)
+
+3. Now go to the second server - use the public key of the other server and add it to the authorized_keys file in the .ssh folder
+
+4. Now you can ssh from the main server to the second server without password
