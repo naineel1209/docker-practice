@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c6752b9-1bab-49ec-8d78-f2523aae2dd6" name="Changes" comment="done-2">
-      <change afterPath="$PROJECT_DIR$/docker-deep-dive/twitter-backend-docker/.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-deep-dive/twitter-backend-docker/docker-compose.yml" afterDir="false" />
+    <list default="true" id="0c6752b9-1bab-49ec-8d78-f2523aae2dd6" name="Changes" comment="done --">
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/architecture" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/demo-deploy-react-app/demo-react-app/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/demo-deploy-react-app/demo-react-app/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/initial/commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-deep-dive/twitter-backend-docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker-deep-dive/twitter-backend-docker/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +24,22 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "naineel1209"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/naineel1209/docker-practice.git",
+    "accountId": "4294e2e9-e129-417d-8935-04ab8e0be143"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -37,33 +51,54 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Node.js.index.js.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "javascript.nodejs.core.library.configured.version": "21.7.1",
     "javascript.nodejs.core.library.typings.version": "20.14.5",
-    "last_opened_file_path": "D:/Development/dev-node/twitter-backend",
+    "last_opened_file_path": "C:/Users/ZTI/WebstormProjects/DevopsPractice/docker-deep-dive/docker-networks",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "C:\\Users\\ZTI\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Users\\ZTI\\WebstormProjects\\DevopsPractice\\kubernetes_deep_dive\\demo-deploy-react-app\\demo-react-app\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ZTI\WebstormProjects\DevopsPractice\docker-deep-dive\docker-networks" />
       <recent name="C:\Users\ZTI\WebstormProjects\DevopsPractice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZTI\WebstormProjects\DevopsPractice\kubernetes_deep_dive" />
       <recent name="C:\Users\ZTI\WebstormProjects\DevopsPractice\docker-deep-dive\twitter-backend-docker" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/kubernetes_deep_dive/demo-deploy-react-app/demo-react-app/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17890.13" />
       </set>
     </attachedChunks>
   </component>
@@ -82,6 +117,11 @@
       <workItem from="1718595926942" duration="1272000" />
       <workItem from="1718682302732" duration="588000" />
       <workItem from="1718767422665" duration="3075000" />
+      <workItem from="1718856241307" duration="17680000" />
+      <workItem from="1718887924363" duration="294000" />
+      <workItem from="1718888233311" duration="667000" />
+      <workItem from="1718942831325" duration="7537000" />
+      <workItem from="1718954987615" duration="5096000" />
     </task>
     <task id="LOCAL-00001" summary="done-2">
       <option name="closed" value="true" />
@@ -99,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718173486523</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="done --">
+      <option name="closed" value="true" />
+      <created>1718884006050</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718884006050</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +155,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="done-2" />
+    <MESSAGE value="done --" />
+    <option name="LAST_COMMIT_MESSAGE" value="done --" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/docker-deep-dive/docker-commmunication/db_connections/index.js</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

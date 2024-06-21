@@ -1,0 +1,12 @@
+Kubernetes Commands
+
+-start minikube - minikube start for testing purposes
+minikube dashboard
+
+- kubectl get pods
+
+
+
+1. start with creating deployment - kubectl create deployment <deployment-name> --image=<image-name>
+2. we need to expose that deployment - kubectl expose deployment <deployment-name> --type=LoadBalancer --port=<container-port>
+3. we need to let the mini kube know that we want to expose that deployment - minikube service <deployment-name>

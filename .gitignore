@@ -131,3 +131,4 @@ dist
 .idx
 *.pem
 !/day6-aws-shell-scripting/aws-resources.txt
+!/kubernetes_deep_dive/demo-deploy-react-app/demo-react-app/
