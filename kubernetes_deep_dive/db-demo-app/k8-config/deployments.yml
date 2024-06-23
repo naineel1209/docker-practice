@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db-demo-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: db-demo-app
+  template:
+    metadata:
+      labels:
+        app: db-demo-app
+    spec:
+      containers:
+        # List all the containers for the deployment
+        - name: db-demo-app
+          image: naineelsoyantar/express-db-demo:1
+          ports:
+            - containerPort: 3000
+        - name: db-demo-app-mongo
+          image: mongo
+          ports:
+            - containerPort: 27017

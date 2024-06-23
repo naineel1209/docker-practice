@@ -7,8 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is strictly for the demo purpose. This is a React App running on Kubernetes.
-          Kubernetes Deep Dive - Demo Deploy React App
+          V2 of the Kubernetes Deep Dive React App. This is the latest version of the app.
         </p>
         <a
           className="App-link"

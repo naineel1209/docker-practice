@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: db-demo-app-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: db-demo-app
+  ports:
+    - name: http
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
+    - name: mongo
+      protocol: TCP
+      port: 27017
+      targetPort: 27017

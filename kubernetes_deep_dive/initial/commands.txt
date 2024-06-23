@@ -10,3 +10,15 @@ minikube dashboard
 1. start with creating deployment - kubectl create deployment <deployment-name> --image=<image-name>
 2. we need to expose that deployment - kubectl expose deployment <deployment-name> --type=LoadBalancer --port=<container-port>
 3. we need to let the mini kube know that we want to expose that deployment - minikube service <deployment-name>
+
+
+-- Kubectl get pods services deployment etc to get the status of the pods, services, deployments etc
+
+
+-> kubectl port-forward service/<service-name> <host-port>:<container-port> - to forward the request to the service
+
+-> kubectl delete deployment <deployment-name> - to delete the deployment
+-> kubectl delete service <service-name> - to delete the service
+
+-> kubectl set image deployment <deployment-name> <container-name> = <new-image-name> - to update the image of the deployment
+-> kubectl rollout status deployment <deployment-name> - to check the status of the deployment
