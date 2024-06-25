@@ -15,3 +15,23 @@
     - Docker, containerd, CRI-O
   - Pod - where one or more containers are running
     - Container
+
+
+-> Worker Node
+
+    - contains majorly 3 components
+
+    1. kubelet -  which manages the pods and containers running on the node
+    2. kube-proxy  - which manages the network connectivity between the pods and the outside world
+        - kubeproxy uses iptables to create the rules for the network connectivity
+        - its docker equivalent is docker network - bridge, host, overlay etc.
+    3. Container runtime - which runs the containers in the pods like containerd, dockershim, cri-o etc.
+
+-> Master Node
+
+    - contains majorly 4 components
+
+    1. API server - which is the entry point for the kubernetes cluster
+    2. Scheduler - which schedules the pods on the worker nodes
+    3. Controller manager - which manages the controllers like replication controller, endpoints controller, namespace controller etc.
+    4. etcd - which is the key value store for the kubernetes cluster - every change in the cluster is stored in etcd
