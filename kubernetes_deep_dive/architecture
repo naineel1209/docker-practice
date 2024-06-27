@@ -1,13 +1,22 @@
 # K8s architecture
 
+Cluster - Master Node + Worker Nodes
+
 - Master node
-  - API server - interface to cluster
-     - `kubectl` talks to API server
-  - Scheduler - assigns work to nodes
-  - Controller manager - detect cluster state changes
-  - etcd - key value store
-  - kubelet - agent running on each node
-    - kube-proxy - network proxy
+- API server - interface to cluster
+- `kubectl` talks to API server
+- Scheduler - assigns work to nodes
+- Controller manager - detect cluster state changes
+- desired state
+- current state
+- make changes
+- replication controller
+- etcd - key value store
+- kubelet - agent running on each node
+- kube-proxy - network proxy
+
+
+
 - Worker node
   - kubelet - agent running on each node
     - kube-proxy
