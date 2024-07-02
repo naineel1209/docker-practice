@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: first-configmap
+data:
+  username: naineel
+  database: k8s-db

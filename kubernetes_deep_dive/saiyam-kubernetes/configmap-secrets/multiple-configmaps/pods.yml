@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dev-prod-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dev-prod-deployment
+  template:
+    metadata:
+      labels:
+        app: dev-prod-deployment
+    spec:
+      containers:
+        - name: dev-prod-container
+          image: nginx:1.14.2
+          env:
+            - name: ENVIRONMENT
+              value: "development"
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: config-volume
+              mountPath: /etc/config
+      volumes:
+        - name: config-volume
+          configMap:
+            #      This will mount the properties file from the second-configmap-dev ConfigMap
+            name: second-configmap-prod

@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: second-configmap-dev
+data:
+  settings.properties: |
+    debug=true
+    database_url=http://localhost:5432/dev
+    database_name=dev
+    feature_enabled=true
+
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: second-configmap-prod
+data:
+  settings.properties: |
+    debug=false
+    database_url=http://localhost:5432/prod
+    database_name=prod
+    feature_enabled=false

@@ -1,22 +1,5 @@
 # K8s architecture
 
-- Master node
-  - API server - interface to cluster
-     - `kubectl` talks to API server
-  - Scheduler - assigns work to nodes
-  - Controller manager - detect cluster state changes
-  - etcd - key value store
-  - kubelet - agent running on each node
-    - kube-proxy - network proxy
-- Worker node
-  - kubelet - agent running on each node
-    - kube-proxy
-  - Container runtime - software to run containers
-    - Docker, containerd, CRI-O
-  - Pod - where one or more containers are running
-    - Container
-
-
 -> Worker Node
 
     - contains majorly 3 components
@@ -35,3 +18,4 @@
     2. Scheduler - which schedules the pods on the worker nodes
     3. Controller manager - which manages the controllers like replication controller, endpoints controller, namespace controller etc.
     4. etcd - which is the key value store for the kubernetes cluster - every change in the cluster is stored in etcd
+    5. Cloud Controller Manager - EKS, GKE, AKS etc. - which manages the cloud specific resources like load balancers, volumes etc.

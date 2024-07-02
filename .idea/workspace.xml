@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c6752b9-1bab-49ec-8d78-f2523aae2dd6" name="Changes" comment="done --">
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/abhishek/service-deep-dive/djpy-application/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/abhishek/service-deep-dive/djpy-application/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/saiyam-kubernetes/configmap-secrets/multiple-configmaps/pods.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/saiyam-kubernetes/configmap-secrets/raw-configmaps/configmap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/saiyam-kubernetes/configmap-secrets/raw-configmaps/pods.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/saiyam-kubernetes/configmap-secrets/secrets/mysql-configmap+secrets/configmap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/saiyam-kubernetes/configmap-secrets/secrets/mysql-configmap+secrets/pods.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/saiyam-kubernetes/configmap-secrets/secrets/mysql-configmap+secrets/secrets.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/saiyam-kubernetes/configmap-secrets/secrets/private-imagepull/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/saiyam-kubernetes/configmap-secrets/secrets/private-imagepull/docker-registry-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/saiyam-kubernetes/configmap-secrets/secrets/private-imagepull/docker-registry-secret.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes_deep_dive/saiyam-kubernetes/configmap-secrets/secrets/secrets.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes_deep_dive/abhishek/service-deep-dive" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes_deep_dive/abhishek/service-deep-dive" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes_deep_dive/abhishek/service-deep-dive/examples/python-web-app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes_deep_dive/abhishek/service-deep-dive/examples/python-web-app/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kubernetes_deep_dive/architecture" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes_deep_dive/architecture" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +75,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\ZTI\\WebstormProjects\\DevopsPractice\\kubernetes_deep_dive\\demo-deploy-react-app\\demo-react-app\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -71,6 +86,8 @@
       <recent name="C:\Users\ZTI\WebstormProjects\DevopsPractice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZTI\WebstormProjects\DevopsPractice\kubernetes_deep_dive\saiyam-kubernetes\configmap-secrets\raw-configmaps" />
+      <recent name="C:\Users\ZTI\WebstormProjects\DevopsPractice\kubernetes_deep_dive\abhishek\service-deep-dive\djpy-application" />
       <recent name="C:\Users\ZTI\WebstormProjects\DevopsPractice\kubernetes_deep_dive" />
       <recent name="C:\Users\ZTI\WebstormProjects\DevopsPractice\docker-deep-dive\twitter-backend-docker" />
     </key>
@@ -121,7 +138,14 @@
       <workItem from="1718954987615" duration="5096000" />
       <workItem from="1719201987501" duration="642000" />
       <workItem from="1719202970669" duration="1301000" />
-      <workItem from="1719286565051" duration="2266000" />
+      <workItem from="1719286565051" duration="2649000" />
+      <workItem from="1719373299415" duration="1262000" />
+      <workItem from="1719382931946" duration="3990000" />
+      <workItem from="1719459494573" duration="5380000" />
+      <workItem from="1719545889208" duration="208000" />
+      <workItem from="1719546129443" duration="9121000" />
+      <workItem from="1719806641014" duration="1168000" />
+      <workItem from="1719893755483" duration="15570000" />
     </task>
     <task id="LOCAL-00001" summary="done-2">
       <option name="closed" value="true" />

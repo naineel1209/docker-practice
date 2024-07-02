@@ -16,11 +16,11 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: first-configmap
-              key: database_name
+              key: database
         - name: MYSQL_PASSWORD
-          value: demo123  # Specify a strong password.
+          value: "1234567890"  # Specify a strong password.
         - name: MYSQL_ROOT_PASSWORD
-          value: demo345 # You should change this value.
+          value: "1234567890" # You should change this value.
       ports:
         - containerPort: 3306
           name: mysql
