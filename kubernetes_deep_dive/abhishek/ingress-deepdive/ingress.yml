@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: demo-ingress
+  namespace: default
+spec:
+  rules:
+  - host: "foo.bar.com"
+    http:
+      paths:
+      - path: /foo
+        # pathType means that the path is a prefix other options are ImplementationSpecific and Exact
+        pathType: Prefix
+        backend:
+          service:
+            name: demo-djpy-service
+            port:
+              number: 8000

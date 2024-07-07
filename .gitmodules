@@ -1,0 +1,3 @@
+[submodule "kubernetes_deep_dive/kubernetes_deep_dive/k8s-services"]
+	path = kubernetes_deep_dive/kubernetes_deep_dive/k8s-services
+	url = https://github.com/naineel1209/k8s-services
